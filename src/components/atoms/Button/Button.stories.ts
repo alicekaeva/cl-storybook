@@ -1,26 +1,25 @@
-// src/components/Button/Button.src.tsx
-import { Button } from './Button';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from "./Button"
+import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof Button> = {
-  title: 'Atoms/Button',
+  title: "Atoms/Button",
   component: Button,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     type: {
-      control: { type: 'select' },
-      options: ['primary', 'default', 'dashed', 'link', 'text'],
+      control: { type: "select" },
+      options: ["primary", "default", "dashed", "link", "text"],
     },
   },
-};
+}
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Button>
 
 export const Primary: Story = {
   args: {
-    type: 'primary',
-    children: 'Click me',
+    type: "primary",
+    children: "Click me",
   },
-};
+}
