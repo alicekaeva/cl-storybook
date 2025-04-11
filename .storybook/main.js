@@ -5,5 +5,8 @@ const config = {
     name: "@storybook/react-webpack5",
     options: {},
   },
+  docs: {
+    autodocs: true,
+  },
 }
 export default config
