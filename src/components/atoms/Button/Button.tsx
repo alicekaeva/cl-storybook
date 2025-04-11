@@ -1,9 +1,9 @@
-import React from 'react'
-import { Button as AntdButton } from 'antd'
-import type { ButtonProps } from 'antd'
+import React from "react"
+import { Button as AntdButton } from "antd"
+import type { ButtonProps } from "antd"
 
-interface CustomButtonProps extends ButtonProps {
-  customProp?: string;
+type CustomButtonProps = ButtonProps & {
+  customProp?: string
 }
 
 export const Button: React.FC<CustomButtonProps> = ({ customProp, ...props }) => {
